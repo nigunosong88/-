@@ -5,7 +5,10 @@ from scipy.stats import norm, skew
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import os
-
+import sys
+current_directory = os.path.dirname(os.path.abspath(__file__))
+rt=os.path.abspath(os.path.dirname(current_directory) + os.path.sep + ".")
+sys.path.append(rt)
 def data_csv():
     # 設定 matplotlib 的字體
     plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 'Microsoft YaHei' 作為例子，可更換成其他字體
