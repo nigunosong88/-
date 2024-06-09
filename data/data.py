@@ -11,7 +11,7 @@ def data_csv():
     plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 'Microsoft YaHei' 作為例子，可更換成其他字體
     plt.rcParams['axes.unicode_minus'] = False  # 正確顯示負號
 
-    df = pd.read_csv('E_lvr_land_A.csv')
+    df = pd.read_csv('.\E_lvr_land_A.csv')
     df = df.drop(['sign','address','non-metropolis','non-metropolis2',
                   'main use','the unit price NTD','the note','serial number',
                   'ID','main building materials'], axis=1)
