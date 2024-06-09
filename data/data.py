@@ -12,8 +12,8 @@ def data_csv():
     rt=os.path.abspath(os.path.dirname(current_directory) + os.path.sep + ".")
     sys.path.append(rt)
     # 設定 matplotlib 的字體
-    plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 'Microsoft YaHei' 作為例子，可更換成其他字體
-    plt.rcParams['axes.unicode_minus'] = False  # 正確顯示負號
+    # plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 'Microsoft YaHei' 作為例子，可更換成其他字體
+    # plt.rcParams['axes.unicode_minus'] = False  # 正確顯示負號
 
     df = pd.read_csv('data/E_lvr_land_A.csv')
     df = df.drop(['sign','address','non-metropolis','non-metropolis2',
