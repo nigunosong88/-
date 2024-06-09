@@ -11,8 +11,6 @@ def data_csv():
     current_directory = os.path.dirname(os.path.abspath(__file__))
     rt=os.path.abspath(os.path.dirname(current_directory) + os.path.sep + ".")
     sys.path.append(rt)
-    print("##########################")
-    print(rt)
     # 設定 matplotlib 的字體
     plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 'Microsoft YaHei' 作為例子，可更換成其他字體
     plt.rcParams['axes.unicode_minus'] = False  # 正確顯示負號
